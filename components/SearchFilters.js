@@ -54,7 +54,7 @@ function SearchFilters(props) {
             {isOpen && <div className="flex flex-col">
                 <div className="lg:flex lg:flex-row lg:border-t lg:border-t-gray-900 lg:mt-2">
 
-                    <div className="border-t border-t-gray-900 mp-4 lg:px-2 lg:border-t-0 lg:w-1/3">
+                    <div className="border-t border-t-gray-900 mt-4 lg:mt-0 lg:mp-4 lg:px-2 lg:border-t-0 lg:w-1/3">
                         <fieldset className="px-3 mt-4 sm:flex sm:flex-row lg:flex-col sm:gap-4">
                             <div className="flex flex-row gap-4 sm:w-1/2 lg:w-full">
                                 <label className="block w-1/2">
@@ -84,7 +84,7 @@ function SearchFilters(props) {
                         </fieldset>
                     </div>
 
-                    <div className="border-t border-t-gray-900 mp-4 lg:px-2 lg:border-t-0 lg:border-l lg:border-l-gray-900 lg:w-1/5">
+                    <div className="border-t border-t-gray-900 mt-4 lg:mt-0 lg:mp-4 lg:px-2 lg:border-t-0 lg:border-l lg:border-l-gray-900 lg:w-1/5">
                         <fieldset className="px-3 mt-2">
                             <legend className="block font-semibold text-gray-500 text-sm">Property Type</legend>
                             <div className="sm:flex sm:flex-row lg:flex-col">
@@ -116,7 +116,7 @@ function SearchFilters(props) {
                         </fieldset>
                     </div>
 
-                    <div className="border-t border-t-gray-900 mp-4 lg:px-2 lg:border-t-0 lg:border-l lg:border-l-gray-900">
+                    <div className="border-t border-t-gray-900 mt-4 lg:mt-0 lg:mp-4 lg:px-2 lg:border-t-0 lg:border-l lg:border-l-gray-900">
                         <fieldset className="px-3 mt-2">
                             <legend className="block font-semibold text-gray-500 text-sm">Amenities</legend>
                             <div className="sm:flex sm:flex-wrap">
