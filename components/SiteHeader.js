@@ -10,10 +10,10 @@ function SiteHeader(props) {
     }
 
     return (
-        <header className="bg-gray-900 sm:flex">
+        <header className="bg-gray-900 sm:flex sm:items-center sm:justify-between xl:flex-none xl:bg-white">
 
-            <div className="flex flex-row justify-between items-center px-4 py-3 sm:flex-auto">
-                <div>
+            <div className="flex flex-row justify-between items-center px-4 xl:w-72 xl:bg-gray-900 xl:justify-center">
+                <div className="py-4">
                     <svg
                         className="h-8 w-auto"
                         viewBox="0 0 185 32"
@@ -65,38 +65,66 @@ function SiteHeader(props) {
                 </div>
             </div>
 
-            <nav className={'sm:flex sm:items-center ' + (isOpen ? 'block' : 'hidden')}>
-                <div className="px-2 py-3 border-b border-gray-800 sm:flex sm:border-b-0">
-                    <a href="#"
-                       className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight font-semibold text-white sm:text-sm">
-                        List your property
-                    </a>
-                    <a href="#"
-                       className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight mt-1 sm:mt-0 font-semibold text-white sm:text-sm">
-                        Trips
-                    </a>
-                    <a href="#"
-                       className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight mt-1 sm:mt-0 font-semibold text-white sm:text-sm">
-                        Messages
-                    </a>
-                </div>
-                <div className="px-5 py-3 sm:py-0 sm:pl-2">
-                    <div className="flex items-center">
-                        <div className="relative h-10 w-10 sm:w-8 sm:h-8">
-                            <Image
-                                src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                                alt="Profile image"
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-full border-2 border-gray-600"
-                            />
+            <nav className={'sm:flex sm:items-center flex-1 justify-end xl:justify-between ' + (isOpen ? 'block' : 'hidden')}>
+                <div className="hidden xl:block xl:pl-4 xl:max-w-md xl:w-full">
+                    <div className="relative flex-1">
+                        <div className="absolute inset-y-0 left-0 flex items-center pl-3">
+                            <svg
+                                className="w-6 h-6 text-gray-500"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-4 font-semibold text-gray-200 sm:hidden">Mary Anna</span>
+                        <input
+                            placeholder="Search by keywords"
+                            className="w-full bg-gray-200 text-gray-500 rounded-lg pl-10 pr-4 py-2
+                            border border-transparent focus:border-gray-200
+                            focus:outline-none focus:bg-white focus:text-gray-900"
+                        />
                     </div>
-                    <div className="mt-5 sm:hidden">
-                        <a className="block text-gray-400 hover:text-white" href="#">Account settings</a>
-                        <a className="block mt-3 text-gray-400 hover:text-white" href="#">Support</a>
-                        <a className="block mt-3 text-gray-400 hover:text-white" href="#">Sign out</a>
+                </div>
+                <div className="sm:flex sm:items-center">
+                    <div className="px-2 py-3 border-b border-gray-800 sm:flex sm:border-b-0">
+                        <a href="#"
+                           className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight font-semibold text-white xl:text-gray-900 sm:text-sm">
+                            List your property
+                        </a>
+                        <a href="#"
+                           className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight mt-1 sm:mt-0 font-semibold text-white xl:text-gray-900 sm:text-sm">
+                            Trips
+                        </a>
+                        <a href="#"
+                           className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight mt-1 sm:mt-0 font-semibold text-white xl:text-gray-900 sm:text-sm">
+                            Messages
+                        </a>
+                    </div>
+                    <div className="px-5 py-3 sm:py-0 sm:pl-2">
+                        <div className="flex items-center">
+                            <div className="relative h-10 w-10 sm:w-8 sm:h-8">
+                                <Image
+                                    src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                                    alt="Profile image"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="rounded-full border-2 border-gray-600"
+                                />
+                            </div>
+                            <span className="ml-4 font-semibold text-gray-200 sm:hidden">Mary Anna</span>
+                        </div>
+                        <div className="mt-5 sm:hidden">
+                            <a className="block text-gray-400 hover:text-white" href="#">Account settings</a>
+                            <a className="block mt-3 text-gray-400 hover:text-white" href="#">Support</a>
+                            <a className="block mt-3 text-gray-400 hover:text-white" href="#">Sign out</a>
+                        </div>
                     </div>
                 </div>
             </nav>

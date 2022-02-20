@@ -4,7 +4,12 @@ module.exports = {
         './components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            spacing: {
+                '72': '18rem',
+                '80': '20rem'
+            }
+        },
     },
     plugins: [
         require('tailwindcss-question-mark'),
