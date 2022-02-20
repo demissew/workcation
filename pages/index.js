@@ -8,10 +8,17 @@ export default function Home() {
         <div className="bg-gray-200 min-h-screen antialiased">
             <SiteHeader/>
             <SearchFilters/>
-            <main className="px-4 py-4">
-                <h3 className="text-gray-900 text-xl">Los Angeles</h3>
-                <p className="text-gray-600">Live like a star ... blah blah blah</p>
-                <ListingCard/>
+            <main className="py-4">
+
+                <div className="px-4">
+                    <h3 className="text-gray-900 text-xl">Los Angeles</h3>
+                    <p className="text-gray-600">Live like a star ... blah blah blah</p>
+                </div>
+
+                <div className="sm:flex sm:gap-6 sm:overflow-x-auto sm:pb-8 px-4">
+                    {[1, 2, 3, 4, 5].map(i => <ListingCard key={i}/>)}
+                </div>
+
             </main>
         </div>
     );

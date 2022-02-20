@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const ListingCard = () => {
   return (
-    <>
-      <div className="h-64 mt-6 relative">
+    <div className="mt-6 sm:max-w-xs sm:w-full sm:flex-shrink-0">
+      <div className="h-64 relative">
         <Image
           className="rounded-lg shadow-md"
           src="https://images.unsplash.com/photo-1609627899370-4146c22d4478?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80"
@@ -55,7 +55,7 @@ const ListingCard = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

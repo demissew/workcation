@@ -8,11 +8,11 @@ function SearchFilters(props) {
 
     return (
 
-        <section className="bg-gray-800 gap-3 pt-3">
+        <section className="bg-gray-800 gap-3 py-3">
 
             <div className="px-3">
                 <div className="flex flex-row justify-between gap-2 items-center">
-                    <div className="relative">
+                    <div className="relative flex-1">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                             <svg
                                 className="w-6 h-6 text-gray-500"
@@ -31,7 +31,7 @@ function SearchFilters(props) {
                         </div>
                         <input
                             placeholder="Search by keywords"
-                            className="bg-gray-900 text-gray-500 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:bg-white focus:text-gray-900"
+                            className="w-full bg-gray-900 text-gray-500 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:bg-white focus:text-gray-900"
                         />
                     </div>
                     <button
@@ -53,9 +53,9 @@ function SearchFilters(props) {
 
             {isOpen && <div className="flex flex-col">
 
-                <div className=" border-t border-t-gray-900 mt-4">
-                    <fieldset className="px-3 mt-2">
-                        <div className="flex flex-row gap-4">
+                <div className="border-t border-t-gray-900 mt-4">
+                    <fieldset className="px-3 mt-4 sm:flex sm:flex-row sm:gap-4">
+                        <div className="flex flex-row gap-4 sm:w-1/2">
                             <label className="block w-1/2">
                                 <span className="text-sm text-gray-500 font-semibold">Bedrooms</span>
                                 <select
@@ -71,97 +71,103 @@ function SearchFilters(props) {
                                 </select>
                             </label>
                         </div>
-                        <label className="block mt-4">
-                            <div className="text-sm text-gray-500 font-semibold">Price Range</div>
-                            <select
-                                className="form-select block w-full mt-1 border-transparent rounded-lg bg-gray-700 text-gray-400 shadow focus:bg-gray-800 select:focus:border-none">
-                                <option value="2">Up to $2,000/wk</option>
-                            </select>
-                        </label>
+                        <div className="mt-4 sm:mt-1  sm:w-1/2">
+                            <label>
+                                <div className="text-sm text-gray-500 font-semibold">Price Range</div>
+                                <select
+                                    className="form-select block w-full mt-1 border-transparent rounded-lg bg-gray-700 text-gray-400 shadow focus:bg-gray-800 select:focus:border-none">
+                                    <option value="2">Up to $2,000/wk</option>
+                                </select>
+                            </label>
+                        </div>
                     </fieldset>
                 </div>
 
-                <div className=" border-t border-t-gray-900 mt-4">
+                <div className="border-t border-t-gray-900 mt-4">
                     <fieldset className="px-3 mt-2">
                         <legend className="block font-semibold text-gray-500 text-sm">Property Type</legend>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="radio" value="house" name="propertyType"/>
-                            <span className="text-sm text-gray-500 font-semibold">House</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="radio" value="apartment" name="propertyType"/>
-                            <span className="text-sm text-gray-500 font-semibold">Apartment</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="radio" value="loft" name="propertyType"/>
-                            <span className="text-sm text-gray-500 font-semibold">Loft</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="radio" value="townhouse" name="propertyType"/>
-                            <span className="text-sm text-gray-500 font-semibold">Townhouse</span>
-                        </label>
+                        <div className="sm:flex sm:flex-row">
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="radio" value="house" name="propertyType"/>
+                                <span className="text-sm text-gray-500 font-semibold">House</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="radio" value="apartment" name="propertyType"/>
+                                <span className="text-sm text-gray-500 font-semibold">Apartment</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="radio" value="loft" name="propertyType"/>
+                                <span className="text-sm text-gray-500 font-semibold">Loft</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="radio" value="townhouse" name="propertyType"/>
+                                <span className="text-sm text-gray-500 font-semibold">Townhouse</span>
+                            </label>
+                        </div>
                     </fieldset>
                 </div>
 
                 <div className=" border-t border-t-gray-900 mt-4">
                     <fieldset className="px-3 mt-2">
                         <legend className="block font-semibold text-gray-500 text-sm">Amenities</legend>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="checkbox" name="house"/>
-                            <span className="text-sm text-gray-500 font-semibold">House</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="checkbox" name="airConditioning"/>
-                            <span className="text-sm text-gray-500 font-semibold">Air conditioning</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="checkbox" name="pool"/>
-                            <span className="text-sm text-gray-500 font-semibold">Pool</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="checkbox" name="beach"/>
-                            <span className="text-sm text-gray-500 font-semibold">Beach</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="checkbox" name="petFriendly"/>
-                            <span className="text-sm text-gray-500 font-semibold">Pet friendly</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="checkbox" name="kidFriendly"/>
-                            <span className="text-sm text-gray-500 font-semibold">Kid friendly</span>
-                        </label>
-                        <label className="block flex flex-row mt-4 gap-2 items-center">
-                            <input
-                                className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
-                                type="checkbox" name="kidFriendly"/>
-                            <span className="text-sm text-gray-500 font-semibold">Parking</span>
-                        </label>
+                        <div className="sm:flex sm:flex-wrap">
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="checkbox" name="house"/>
+                                <span className="text-sm text-gray-500 font-semibold">House</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="checkbox" name="airConditioning"/>
+                                <span className="text-sm text-gray-500 font-semibold">Air conditioning</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="checkbox" name="pool"/>
+                                <span className="text-sm text-gray-500 font-semibold">Pool</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="checkbox" name="beach"/>
+                                <span className="text-sm text-gray-500 font-semibold">Beach</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="checkbox" name="petFriendly"/>
+                                <span className="text-sm text-gray-500 font-semibold">Pet friendly</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="checkbox" name="kidFriendly"/>
+                                <span className="text-sm text-gray-500 font-semibold">Kid friendly</span>
+                            </label>
+                            <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
+                                <input
+                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    type="checkbox" name="kidFriendly"/>
+                                <span className="text-sm text-gray-500 font-semibold">Parking</span>
+                            </label>
+                        </div>
                     </fieldset>
                 </div>
 
-                <div className="bg-gray-900 p-4">
+                <div className="bg-gray-900 p-4 mt-4 sm:text-right">
                     <button
-                        className="bg-indigo-500 px-4 py-2 rounded-lg text-white block w-full font-semibold hover:bg-indigo-400">Update
+                        className="bg-indigo-500 px-4 py-2 rounded-lg text-white block w-full sm:w-auto sm:inline-block font-semibold hover:bg-indigo-400">Update
                         results
                     </button>
                 </div>
