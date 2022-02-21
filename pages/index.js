@@ -3,6 +3,7 @@ import ListingCard from '../components/ListingCard';
 import SiteHeader from "../components/SiteHeader";
 import SearchFilters from "../components/SearchFilters";
 import Filters from "../components/Filters";
+import CityProperty from "../components/CityProperty";
 
 export default function Home() {
     return (
@@ -10,23 +11,8 @@ export default function Home() {
             <SiteHeader/>
             <div className="xl:flex xl:flex-1 xl:overflow-y-hidden">
                 <SearchFilters />
-                <main className="py-6 xl:flex-1 xl:overflow-x-hidden">
-
-                    <div className="px-4 flex justify-between items-end">
-                        <div>
-                            <h3 className="text-gray-900 text-xl">Los Angeles</h3>
-                            <p className="text-gray-600">Live like a star ... blah blah blah</p>
-                        </div>
-                        <div className="hidden sm:block">
-                            <a href="#" className="text-sm font-semibold text-indigo-600 hover:text-indigo-400">View
-                                all</a>
-                        </div>
-                    </div>
-
-                    <div className="sm:flex sm:gap-6 sm:overflow-x-auto sm:pb-8 px-4">
-                        {[1, 2, 3, 4, 5].map(i => <ListingCard key={i}/>)}
-                    </div>
-
+                <main className="pt-3 pb-6 xl:flex-1 xl:overflow-x-hidden">
+                    {[1, 2, 3, 4].map(i => <CityProperty key={i}/>)}
                 </main>
             </div>
         </div>

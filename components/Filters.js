@@ -46,25 +46,25 @@ function Filters(props) {
                         <div className="sm:flex sm:flex-row lg:flex-col">
                             <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-radio w-5 h-5 bg-gray-900 focus:bg-gray-700 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="radio" value="house" name="propertyType"/>
                                 <span className="text-sm text-gray-500 font-semibold">House</span>
                             </label>
                             <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-radio w-5 h-5 bg-gray-900 focus:bg-gray-700 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="radio" value="apartment" name="propertyType"/>
                                 <span className="text-sm text-gray-500 font-semibold">Apartment</span>
                             </label>
                             <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-radio w-5 h-5 bg-gray-900 focus:bg-gray-700 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="radio" value="loft" name="propertyType"/>
                                 <span className="text-sm text-gray-500 font-semibold">Loft</span>
                             </label>
                             <label className="block sm:w-1/4 flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="radio bg-gray-900 focus:bg-gray-800 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-radio w-5 h-5 bg-gray-900 focus:bg-gray-700 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="radio" value="townhouse" name="propertyType"/>
                                 <span className="text-sm text-gray-500 font-semibold">Townhouse</span>
                             </label>
@@ -81,43 +81,43 @@ function Filters(props) {
                         <div className="sm:flex sm:flex-wrap xl:flex-col">
                             <label className="block sm:w-1/4 xl:w-full flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-checkbox w-5 h-5 rounded-md bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="checkbox" name="house"/>
                                 <span className="text-sm text-gray-500 font-semibold">House</span>
                             </label>
                             <label className="block sm:w-1/4 xl:w-full flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-checkbox w-5 h-5 rounded-md bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="checkbox" name="pool"/>
                                 <span className="text-sm text-gray-500 font-semibold">Pool</span>
                             </label>
                             <label className="block sm:w-1/4 xl:w-full flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-checkbox w-5 h-5 rounded-md bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="checkbox" name="beach"/>
                                 <span className="text-sm text-gray-500 font-semibold">Beach</span>
                             </label>
                             <label className="block sm:w-1/4 xl:w-full flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-checkbox w-5 h-5 rounded-md bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="checkbox" name="petFriendly"/>
                                 <span className="text-sm text-gray-500 font-semibold">Pet friendly</span>
                             </label>
                             <label className="block sm:w-1/4 xl:w-full flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-checkbox w-5 h-5 rounded-md bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="checkbox" name="kidFriendly"/>
                                 <span className="text-sm text-gray-500 font-semibold">Kid friendly</span>
                             </label>
                             <label className="block sm:w-1/4 xl:w-full flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-checkbox w-5 h-5 rounded-md bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="checkbox" name="kidFriendly"/>
                                 <span className="text-sm text-gray-500 font-semibold">Parking</span>
                             </label>
-                            <label className="block sm:w-1/4 xl:w-full flex flex-row mt-4 gap-2 items-center">
+                            <label className="block sm:w-1/3 xl:w-full flex flex-row mt-4 gap-2 items-center">
                                 <input
-                                    className="checkbox rounded bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
+                                    className="form-checkbox w-5 h-5 rounded-md bg-gray-900 border-transparent checked:focus:outline-none checked:focus:bg-indigo-500 checked:focus:border-transparent focus:bg-indigo-500 checked:bg-indigo-500"
                                     type="checkbox" name="airConditioning"/>
                                 <span className="text-sm text-gray-500 font-semibold">Air conditioning</span>
                             </label>

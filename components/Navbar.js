@@ -56,15 +56,17 @@ const Navbar = ({isOpen}) => {
             <div className="sm:flex sm:items-center">
                 <div className="px-2 py-3 border-b border-gray-800 sm:flex sm:border-b-0">
                     <a href="#"
-                       className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight font-semibold text-white xl:text-gray-900 sm:text-sm">
+                       className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight font-semibold text-white
+                       xl:hover:bg-gray-200
+                       xl:text-gray-900 sm:text-sm">
                         List your property
                     </a>
                     <a href="#"
-                       className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight mt-1 sm:mt-0 font-semibold text-white xl:text-gray-900 sm:text-sm">
+                       className="block px-3 py-2 rounded hover:bg-gray-600 xl:hover:bg-gray-200 leading-tight mt-1 sm:mt-0 font-semibold text-white xl:text-gray-900 sm:text-sm">
                         Trips
                     </a>
                     <a href="#"
-                       className="block px-3 py-2 rounded hover:bg-gray-600 leading-tight mt-1 sm:mt-0 font-semibold text-white xl:text-gray-900 sm:text-sm">
+                       className="block px-3 py-2 rounded hover:bg-gray-600 xl:hover:bg-gray-200 leading-tight mt-1 sm:mt-0 font-semibold text-white xl:text-gray-900 sm:text-sm">
                         Messages
                     </a>
                 </div>
