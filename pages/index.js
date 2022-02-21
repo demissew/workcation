@@ -2,13 +2,14 @@ import React from 'react';
 import ListingCard from '../components/ListingCard';
 import SiteHeader from "../components/SiteHeader";
 import SearchFilters from "../components/SearchFilters";
+import Filters from "../components/Filters";
 
 export default function Home() {
     return (
         <div className="bg-gray-200 min-h-screen antialiased xl:flex xl:flex-col xl:h-screen">
-            <SiteHeader />
+            <SiteHeader/>
             <div className="xl:flex xl:flex-1 xl:overflow-y-hidden">
-                <SearchFilters/>
+                <SearchFilters />
                 <main className="py-6 xl:flex-1 xl:overflow-x-hidden">
 
                     <div className="px-4 flex justify-between items-end">
@@ -17,7 +18,8 @@ export default function Home() {
                             <p className="text-gray-600">Live like a star ... blah blah blah</p>
                         </div>
                         <div className="hidden sm:block">
-                            <a href="#" className="text-sm font-semibold text-indigo-600 hover:text-indigo-400">View all</a>
+                            <a href="#" className="text-sm font-semibold text-indigo-600 hover:text-indigo-400">View
+                                all</a>
                         </div>
                     </div>
 

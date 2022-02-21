@@ -82,9 +82,10 @@ const Navbar = ({isOpen}) => {
                         <span className="ml-4 font-semibold text-gray-200 sm:hidden">Mary Anna</span>
                     </button>
                     <div className={isDropdownOpen ? 'sm:block' : 'sm:hidden'}>
-                        <button onClick={() => toggleDropdownMenu()} type="button" className="cursor-default fixed inset-0 z-10 w-full h-full bg-black-100" />
+                        <button onClick={() => toggleDropdownMenu()} type="button"
+                                className="hidden sm:block cursor-default fixed inset-0 z-10 w-full h-full" />
                         <div
-                            className="border mt-5 z-10 sm:mt-3 sm:absolute sm:bg-white sm:rounded-lg sm:right-3 sm:shadow-xl sm:text-gray-900 sm:py-2 sm:w-48">
+                            className="mt-5 z-10 sm:mt-3 sm:absolute sm:bg-white sm:rounded-lg sm:right-3 sm:shadow-xl sm:text-gray-900 sm:py-2 sm:w-48">
                             <a className="block sm:px-4 sm:py-2 sm:mt-0 sm:hover:bg-indigo-500 text-gray-400 hover:text-white"
                                href="#">Account settings</a>
                             <a className="block sm:px-4 sm:py-2 sm:mt-0 sm:hover:bg-indigo-500 mt-3 text-gray-400 hover:text-white"
